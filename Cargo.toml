@@ -8,7 +8,10 @@ publish = false
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-solana-program = "1.6.9"
+solana-program = "1.9.4"
+thiserror = "1.0.24"
+arrayref = "0.3.6"
+spl-token = {version = "3.2.0", features = ["no-entrypoint"]}
 
 [lib]
 crate-type = ["cdylib", "lib"]
